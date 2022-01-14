@@ -1,11 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* common styles */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+.section-title{
+    text-align: center;
+}
+.section-title h2{
+    font-size: 40px;
+    color: black;
+    border-left: 8px solid #ff008e;
+    border-image-slice: 1;
+    line-height: 41px;
+    display: inline-block;
+    text-transform: uppercase;
+    margin-bottom: 55px;
+
+}
+
 .highlight{
     color: #ff008e;
+}
+
+.primary-button{
+    outline: 0;
+    border: 0;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 7px 0 #a5075e;
+    position: relative;
+    top: 0;
+    padding: 10px 20px;
+    background-image: linear-gradient(90deg, #a80961, #f641a5);
+}
+.primary-button:active{
+    top: 5px;
+    box-shadow: 0 2px 0 #a5075e;
+
 }
 body{
     font-family: 'Poppins', sans-serif;
@@ -21,6 +59,7 @@ header{
     background-size: cover;
     background-color: rgba(0,0,0,0.6);
     background-blend-mode: overlay;
+    margin-bottom: 25px;
 }
 
 .nav-container{
@@ -79,25 +118,6 @@ ul li a{
     font-size: 1.2em;
     margin: 20px 0;
 }
-.primary-button{
-    outline: 0;
-    border: 0;
-    font-size: 20px;
-    color: white;
-    text-transform: uppercase;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 0 7px 0 #a5075e;
-    position: relative;
-    top: 0;
-    padding: 10px 20px;
-    background-image: linear-gradient(90deg, #a80961, #f641a5);
-}
-.primary-button:active{
-    top: 5px;
-    box-shadow: 0 2px 0 #a5075e;
-
-}
 .banner-right{
     display: flex;
     justify-content: center;
@@ -105,5 +125,43 @@ ul li a{
 }
 .banner-right img{
     width: 100%;
+}
+
+
+/* Feature CSS */
+
+.feature{
+    display: grid;
+    grid-template-columns: repeat(2,1fr );
+    grid-row-gap: 60px;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width:320px;
+    height: 260px;
+    padding: 30px;
+    box-shadow: 0 30px 35px rgba(0,0,0,0.2);
+    margin: 0 auto;
+
+}
+.card .card-icon{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 1.5em;
+}
+.card h3{
+    color: #ff008e;
+    font-size: 25px;
+}
+.card p{
+    margin: 10px 0;
+    line-height: 1.5;
+}
+.card a{
+    text-decoration: none;
+    color: #ff008e;
 }
 
