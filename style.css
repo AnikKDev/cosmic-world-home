@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.highlight{
+    color: #ff008e;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navigation Bar */
+
+header{
+    /* height:100vh;    */
+    /* video te eta shoraye .banner e 100vh height diye nav er height theke minus kore total 100vh korse. banner e lekha hoise height 100vh-80px  */
+    background: url(./images/cloud.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.6);
+    background-blend-mode: overlay;
+}
+
+.nav-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+ul li{
+    padding: 10px 10px;
+}
+ul li:hover{
+    background-color: white;
+}
+ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 5px 8px;
+}
+
+/* banner */
+
+.banner{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: calc(100vh - 80px);
+}
+.banner-left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+.banner-left h1{
+    text-transform: capitalize;
+    font-size: 45px;
+    color:white;
+}
+.banner-left p{
+    color: white;
+    line-height: 1.5;
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+.primary-button{
+    outline: 0;
+    border: 0;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 7px 0 #a5075e;
+    position: relative;
+    top: 0;
+    padding: 10px 20px;
+    background-image: linear-gradient(90deg, #a80961, #f641a5);
+}
+.primary-button:active{
+    top: 5px;
+    box-shadow: 0 2px 0 #a5075e;
+
+}
+.banner-right{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.banner-right img{
+    width: 100%;
+}
+
